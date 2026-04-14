@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import icon from "@/assets/icon.svg";
 
 const Footer = () => {
   return (
@@ -6,12 +7,12 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6 mb-16 md:mb-24">
         <div className="md:col-span-6">
           <h2 className="font-serif text-4xl md:text-6xl tracking-tighter">
-            Let us begin <br /> the carving.
+            Let's shape <br /> something real.
           </h2>
         </div>
         <div className="md:col-span-3 md:col-start-7">
           <span className="font-sans text-xs tracking-widest uppercase block mb-4 md:mb-6">Inquiries</span>
-          <p className="font-serif text-xl md:text-2xl">studio@mantle-atelier.com</p>
+          <p className="font-serif text-xl md:text-2xl">hello@radicalearthstudio.com</p>
         </div>
         <div className="md:col-span-3">
           <span className="font-sans text-xs tracking-widest uppercase block mb-4 md:mb-6">Studio</span>
@@ -22,9 +23,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-t border-border pt-8 md:pt-12">
-        <p className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground">
-          © 2026 Mantle Atelier — All Rights Reserved
-        </p>
+        <div className="flex items-center gap-4">
+          <img src={icon} alt="RE" className="h-6" />
+          <p className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground">
+            © 2026 Radical Earth Studio — All Rights Reserved
+          </p>
+        </div>
         <div className="flex gap-8">
           <a href="#" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
           <Link to="/collaborate" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Collaborate</Link>

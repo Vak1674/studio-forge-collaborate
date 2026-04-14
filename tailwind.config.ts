@@ -65,8 +65,8 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['EB Garamond', 'serif'],
-        sans: ['Outfit', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+        sans: ['DM Sans', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

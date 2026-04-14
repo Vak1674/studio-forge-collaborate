@@ -16,13 +16,13 @@ const Index = () => {
         <div className="md:col-span-7">
           <h1 className="font-serif text-5xl md:text-7xl lg:text-[9rem] leading-[0.85] tracking-tighter">
             Architecture <br />
-            <span className="italic pl-6 md:pl-12 lg:pl-24">as Permanent</span> <br />
-            Gesture
+            <span className="italic pl-6 md:pl-12 lg:pl-24">Rooted in</span> <br />
+            Experience
           </h1>
         </div>
         <div className="md:col-span-5 flex flex-col justify-end pb-4">
           <p className="font-sans text-base md:text-lg max-w-[35ch] leading-relaxed text-muted-foreground">
-            An emerging practice dedicated to the tactile intersection of raw materials and hospitality. We sculpt spaces that honor the weight of time.
+            An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility. We craft spaces that connect people to place.
           </p>
         </div>
       </section>
@@ -44,22 +44,22 @@ const Index = () => {
       {/* Philosophy */}
       <section className="px-6 md:px-8 py-24 md:py-40 bg-foreground text-primary-foreground grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6">
         <div className="md:col-start-2 md:col-span-5">
-          <span className="font-sans text-xs tracking-widest uppercase opacity-50 mb-6 md:mb-8 block">The Approach</span>
+          <span className="font-sans text-xs tracking-widest uppercase opacity-50 mb-6 md:mb-8 block">Our Ethos</span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight">
-            We do not build structures; we refine the landscape until the essence remains.
+            We design for the senses — spaces that breathe, adapt, and belong to the earth.
           </h2>
         </div>
         <div className="md:col-start-8 md:col-span-4 flex flex-col justify-center gap-10 md:gap-12">
           <div className="space-y-3 md:space-y-4">
-            <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Material Honesty</h3>
+            <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Eco-Conscious</h3>
             <p className="font-serif text-lg md:text-xl italic opacity-70 leading-relaxed">
-              Utilizing local stone and raw concrete to create a thermal and visual anchor to the earth.
+              Every material choice, every orientation decision, every system — considered through the lens of environmental impact.
             </p>
           </div>
           <div className="space-y-3 md:space-y-4">
-            <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Experiential Light</h3>
+            <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Experiential</h3>
             <p className="font-serif text-lg md:text-xl italic opacity-70 leading-relaxed">
-              Choreographing the movement of light across surfaces to mark the passage of time.
+              Architecture isn't just seen — it's felt. We choreograph light, texture, and atmosphere to create lasting emotional resonance.
             </p>
           </div>
         </div>

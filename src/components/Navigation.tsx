@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full z-50 mix-blend-difference px-6 md:px-8 py-8 md:py-10 flex justify-between items-center">
       <Link to="/" className="block">
-        <img src={logo} alt="Radical Earth Studio" className="h-20 md:h-28 invert" />
+        <img src={logo} alt="Radical Earth Studio" className="h-10 md:h-14 invert" />
       </Link>
       <div className="flex gap-6 md:gap-10 font-sans text-xs font-medium tracking-widest uppercase text-primary-foreground">
         <Link 

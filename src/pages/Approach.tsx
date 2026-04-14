@@ -1,6 +1,33 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const steps = [
+  {
+    number: "01",
+    title: "Listen & Understand",
+    subtitle: "Context & Feasibility",
+    description: "Immerse in site, climate, culture. Bring consultants in early to ensure feasibility and mitigate risk.",
+  },
+  {
+    number: "02",
+    title: "Explore & Experiment",
+    subtitle: "Design & Materials",
+    description: "Multiple directions through sketches, models, and material research. Test ideas fearlessly.",
+  },
+  {
+    number: "03",
+    title: "Refine & Resolve",
+    subtitle: "Precision & Dialogue",
+    description: "Develop with precision. Every detail considered. Transparent client communication throughout.",
+  },
+  {
+    number: "04",
+    title: "Realize & Deliver",
+    subtitle: "Construction & Care",
+    description: "Closely involved through build. Ongoing stewardship after handover.",
+  },
+];
+
 const Approach = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -46,86 +73,39 @@ const Approach = () => {
         </div>
       </section>
 
-      {/* Process Steps */}
-      <section className="px-6 md:px-8 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6">
-        <div className="md:col-span-10 md:col-start-2">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-12">The Process</span>
+      {/* Process Diagram */}
+      <section className="px-6 md:px-8 py-20 md:py-32">
+        <div className="max-w-5xl mx-auto">
+          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-16 text-center">The Process</span>
 
-          <div className="space-y-16 md:space-y-20">
-            {/* Step 01 */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-              <div className="md:col-span-2">
-                <span className="font-serif text-4xl md:text-5xl text-muted-foreground">01</span>
-              </div>
-              <div className="md:col-span-4">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Listen & Understand</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  We immerse ourselves in your world — the site, the brief, the aspirations. Deep listening comes before any line is drawn. We study the landscape, the local climate, and the cultural context to build a foundation of understanding.
-                </p>
-              </div>
-              <div className="md:col-span-4 md:col-start-8">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Early Feasibility</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  From the very start, we bring key consultants — structural engineers, cost consultants, sustainability advisors — into the conversation. This isn't about limiting ideas; it's about giving creative ambition a solid foundation and mitigating risk before it compounds.
-                </p>
-              </div>
-            </div>
+          <div className="relative">
+            {/* Connecting line */}
+            <div className="hidden md:block absolute top-[3.25rem] left-0 right-0 h-px bg-border" />
 
-            {/* Step 02 */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-              <div className="md:col-span-2">
-                <span className="font-serif text-4xl md:text-5xl text-muted-foreground">02</span>
-              </div>
-              <div className="md:col-span-4">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Explore & Experiment</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  This is where we play. We develop multiple design directions — through sketches, physical models, material samples, and digital explorations. We test ideas fearlessly, knowing that the most interesting solutions often come from unexpected places.
-                </p>
-              </div>
-              <div className="md:col-span-4 md:col-start-8">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Material Research</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  We source, touch, and test. Material palettes are developed through hands-on research — visiting quarries, workshops, and suppliers to find finishes that are both beautiful and responsible.
-                </p>
-              </div>
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+              {steps.map((step, index) => (
+                <div key={step.number} className="relative text-center group">
+                  {/* Node dot */}
+                  <div className="relative mx-auto mb-8">
+                    <div className="w-[6.5rem] h-[6.5rem] rounded-full border border-border flex items-center justify-center mx-auto bg-background relative z-10 group-hover:border-foreground transition-colors duration-300">
+                      <span className="font-serif text-3xl text-muted-foreground group-hover:text-foreground transition-colors duration-300">{step.number}</span>
+                    </div>
+                  </div>
 
-            {/* Step 03 */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-              <div className="md:col-span-2">
-                <span className="font-serif text-4xl md:text-5xl text-muted-foreground">03</span>
-              </div>
-              <div className="md:col-span-4">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Refine & Resolve</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  The chosen direction is developed with precision. Every detail is considered — from how light enters a room at different hours, to how a handrail meets a wall. We work closely with consultants to ensure the design is technically robust and budget-aligned.
-                </p>
-              </div>
-              <div className="md:col-span-4 md:col-start-8">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Client Dialogue</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  Design is never done in isolation. Regular, transparent communication ensures the project evolves in step with your expectations — no surprises, only deepening conviction.
-                </p>
-              </div>
-            </div>
+                  {/* Arrow between nodes (mobile) */}
+                  {index < steps.length - 1 && (
+                    <div className="md:hidden flex justify-center -mt-4 mb-4">
+                      <div className="w-px h-8 bg-border" />
+                    </div>
+                  )}
 
-            {/* Step 04 */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-              <div className="md:col-span-2">
-                <span className="font-serif text-4xl md:text-5xl text-muted-foreground">04</span>
-              </div>
-              <div className="md:col-span-4">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Realize & Deliver</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  We stay closely involved through construction — ensuring that the quality of the built work matches the ambition of the design. The final space should feel effortless, even though every detail was fought for.
-                </p>
-              </div>
-              <div className="md:col-span-4 md:col-start-8">
-                <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Ongoing Care</h3>
-                <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                  A building is a living thing. We remain available after handover to support the ongoing life of the space — because great architecture deserves stewardship.
-                </p>
-              </div>
+                  <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-2">{step.title}</h3>
+                  <p className="font-sans text-xs tracking-wider uppercase text-muted-foreground mb-4">{step.subtitle}</p>
+                  <p className="font-serif text-base italic text-muted-foreground leading-relaxed max-w-[22ch] mx-auto">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

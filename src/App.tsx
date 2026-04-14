@@ -8,6 +8,7 @@ import Projects from "./pages/Projects.tsx";
 import Studio from "./pages/Studio.tsx";
 import Approach from "./pages/Approach.tsx";
 import Collaborate from "./pages/Collaborate.tsx";
+import ProjectDetail from "./pages/ProjectDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();

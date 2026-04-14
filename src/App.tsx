@@ -8,6 +8,7 @@ import Projects from "./pages/Projects.tsx";
 import Studio from "./pages/Studio.tsx";
 import Approach from "./pages/Approach.tsx";
 import Collaborate from "./pages/Collaborate.tsx";
+import ProjectDetail from "./pages/ProjectDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/studio" element={<Studio />} />
           <Route path="/approach" element={<Approach />} />
           <Route path="/collaborate" element={<Collaborate />} />

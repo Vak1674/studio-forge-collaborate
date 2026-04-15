@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="md:col-span-3 md:col-start-7">
           <span className="font-sans text-xs tracking-widest uppercase block mb-4 md:mb-6">Inquiries</span>
-          <p className="font-serif text-xl md:text-2xl">hello@radicalearthstudio.com</p>
+          <p className="font-serif text-xl md:text-2xl">info@radical-earth.com</p>
         </div>
         <div className="md:col-span-3">
           <span className="font-sans text-xs tracking-widest uppercase block mb-4 md:mb-6">Studio</span>

@@ -8,6 +8,9 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
+import wellnessRetreat2 from "@/assets/wellness-retreat-2.jpg";
+import wellnessRetreat3 from "@/assets/wellness-retreat-3.jpg";
 
 const projects = [
   {
@@ -24,16 +27,16 @@ const projects = [
     ],
   },
   {
-    slug: "hotel-mineral",
-    title: "Hôtel Mineral",
-    location: "Sifnos, Greece",
-    year: "2024",
+    slug: "wellness-retreat",
+    title: "Wellness Retreat",
+    location: "UAE",
+    year: "2026",
     type: "Hospitality",
-    description: "A 12-suite boutique hotel that reinterprets the Cycladic vernacular through a lens of material austerity. Travertine terraces descend toward the Aegean, each suite a private observatory of light and sea.",
+    description: "Four private wellness suites and a shared common area nestled within the desert landscape. Each villa is designed for solitude and connection to the surrounding terrain — rammed earth walls, shaded terraces, and plunge pools that blur the threshold between built form and open sky.",
     images: [
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1200&q=80&auto=format",
+      wellnessRetreat1,
+      wellnessRetreat2,
+      wellnessRetreat3,
     ],
   },
   {

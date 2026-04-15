@@ -8,6 +8,12 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
+import wellnessRetreat2 from "@/assets/wellness-retreat-2.jpg";
+import wellnessRetreat3 from "@/assets/wellness-retreat-3.jpg";
+import wellnessRetreat4 from "@/assets/wellness-retreat-4.jpg";
+import wellnessRetreat5 from "@/assets/wellness-retreat-5.jpg";
+import wellnessRetreat6 from "@/assets/wellness-retreat-6.jpg";
 
 const projectsData: Record<string, {
   title: string;
@@ -37,23 +43,25 @@ const projectsData: Record<string, {
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80&auto=format",
     ],
   },
-  "hotel-mineral": {
-    title: "Hôtel Mineral",
-    location: "Sifnos, Greece",
-    year: "2024",
+  "wellness-retreat": {
+    title: "Wellness Retreat",
+    location: "UAE",
+    year: "2026",
     type: "Hospitality",
-    description: "A 12-suite boutique hotel that reinterprets the Cycladic vernacular through a lens of material austerity. Travertine terraces descend toward the Aegean, each suite a private observatory of light and sea.",
+    description: "A desert wellness sanctuary comprising four private villas and a communal gathering pavilion. Each suite is conceived as a private world — rammed earth walls anchor the architecture to the land while expansive openings dissolve the boundary between interior refuge and the vast surrounding landscape. Privacy and immersion in nature sit at the heart of the design.",
     details: [
       { label: "Client", value: "Confidential" },
-      { label: "Size", value: "1,200 m²" },
-      { label: "Status", value: "Completed" },
-      { label: "Scope", value: "Architecture, landscape & FF&E" },
+      { label: "Size", value: "1,800 m²" },
+      { label: "Status", value: "In Design" },
+      { label: "Scope", value: "Architecture, landscape & interiors" },
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80&auto=format",
+      wellnessRetreat1,
+      wellnessRetreat2,
+      wellnessRetreat3,
+      wellnessRetreat4,
+      wellnessRetreat5,
+      wellnessRetreat6,
     ],
   },
   "the-clearing-house": {

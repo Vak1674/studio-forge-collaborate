@@ -23,12 +23,19 @@ const Studio = () => {
       </section>
 
       {/* Image */}
-      <section className="px-6 md:px-8 pb-20 md:pb-32">
-        <div className="aspect-[21/9] w-full overflow-hidden bg-secondary">
+      <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="md:col-span-7 aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-secondary">
           <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format"
             alt="Studio environment"
             className="w-full h-full object-cover brightness-95"
+          />
+        </div>
+        <div className="md:col-span-4 md:col-start-9 aspect-[3/4] overflow-hidden bg-secondary flex items-end">
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format"
+            alt="Studio founder"
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
@@ -103,10 +110,10 @@ const Studio = () => {
           We'd love to tell you more over a coffee — <span className="italic">virtual or otherwise</span>.
         </h2>
         <a
-          href="mailto:hello@radicalearthstudio.com"
+          href="mailto:info@radical-earth.com"
           className="inline-block font-sans text-sm font-medium tracking-widest uppercase border-b border-foreground pb-2 hover:pb-3 transition-all"
         >
-          hello@radicalearthstudio.com
+          info@radical-earth.com
         </a>
       </section>
 

@@ -30,8 +30,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-8">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+          <a href="https://www.instagram.com/radicalearthstudio?igsh=YWN4OTB1eWtncGlt&utm_source=qr" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
+          <a href="https://www.linkedin.com/in/alexander-konchev-507a7497/" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
           <Link to="/collaborate" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Collaborate</Link>
         </div>
       </div>

@@ -40,7 +40,7 @@ const projectsData: Record<string, {
     description: "A single-family home inspired by the heritage cottages and dramatic landscape of Bishopscourt. Every room is crafted to hold a moment of surprise — from framed garden views to unexpected material transitions — while the spatial arrangement ensures a compact home feels effortlessly generous.",
     details: [
       { label: "Client", value: "Private" },
-      { label: "Size", value: "280 m²" },
+      { label: "Size", value: "450 m²" },
       { label: "Status", value: "In Design" },
       { label: "Scope", value: "Full architectural design, interiors & landscape" },
     ],

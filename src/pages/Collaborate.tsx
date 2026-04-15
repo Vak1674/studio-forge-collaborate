@@ -103,7 +103,7 @@ const Collaborate = () => {
           We're currently accepting select commissions for 2026.
         </h2>
         <a
-          href="mailto:info@radical-earth.com"
+          href="mailto:info@radical-earth.com?subject=Inquiry%20—%20Radical%20Earth%20Studio"
           className="inline-block font-sans text-sm font-medium tracking-widest uppercase border-b border-foreground pb-2 hover:pb-3 transition-all"
         >
           info@radical-earth.com

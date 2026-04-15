@@ -11,19 +11,22 @@ import {
 import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
 import wellnessRetreat2 from "@/assets/wellness-retreat-2.jpg";
 import wellnessRetreat3 from "@/assets/wellness-retreat-3.jpg";
+import houseNonna1 from "@/assets/house-nonna-3.jpg";
+import houseNonna2 from "@/assets/house-nonna-4.jpg";
+import houseNonna3 from "@/assets/house-nonna-1.jpg";
 
 const projects = [
   {
-    slug: "casa-silencio",
-    title: "Casa Silêncio",
-    location: "Comporta, Portugal",
-    year: "2025",
+    slug: "house-nonna",
+    title: "House Nonna",
+    location: "Bishopscourt, Cape Town",
+    year: "2026",
     type: "Residential",
-    description: "A private residence carved into the dunes of the Alentejo coast. Raw concrete volumes frame views of the Atlantic, while interior courtyards of local stone create intimate moments of stillness.",
+    description: "A single-family home inspired by the heritage cottages and dramatic landscape of its surroundings. The design creates moments of surprise throughout, optimising a compact footprint to feel generous through considered spatial arrangement.",
     images: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80&auto=format",
+      houseNonna1,
+      houseNonna2,
+      houseNonna3,
     ],
   },
   {

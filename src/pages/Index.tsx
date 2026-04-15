@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
+import houseNonna1 from "@/assets/house-nonna-3.jpg";
 
 const HERO_IMG = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80&auto=format";
-const PROJECT_1 = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format";
 
 const Index = () => {
   return (
@@ -68,13 +68,13 @@ const Index = () => {
       {/* Work Preview */}
       <section className="px-6 md:px-8 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-y-16 md:gap-y-24 gap-x-6">
         <div className="md:col-span-6 flex flex-col">
-          <Link to="/projects" className="block bg-secondary mb-6 md:mb-8 aspect-[4/5] overflow-hidden group">
-            <img src={PROJECT_1} alt="Villa project" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <Link to="/projects/house-nonna" className="block bg-secondary mb-6 md:mb-8 aspect-[4/5] overflow-hidden group">
+            <img src={houseNonna1} alt="House Nonna" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           </Link>
           <div className="flex justify-between items-start">
             <div>
-              <h4 className="font-serif text-2xl md:text-3xl">Casa Silêncio</h4>
-              <p className="font-sans text-xs tracking-widest uppercase text-muted-foreground mt-2">Comporta, Portugal — 2025</p>
+              <h4 className="font-serif text-2xl md:text-3xl">House Nonna</h4>
+              <p className="font-sans text-xs tracking-widest uppercase text-muted-foreground mt-2">Bishopscourt, Cape Town — 2026</p>
             </div>
             <div className="font-sans text-xs border border-foreground/20 px-3 md:px-4 py-2 uppercase tracking-tighter">
               Residential

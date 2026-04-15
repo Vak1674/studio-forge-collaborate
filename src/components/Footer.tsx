@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="md:col-span-3 md:col-start-7">
           <span className="font-sans text-xs tracking-widest uppercase block mb-4 md:mb-6">Inquiries</span>
-          <p className="font-serif text-xl md:text-2xl">info@radical-earth.com</p>
+          <a href="mailto:info@radical-earth.com?subject=Inquiry%20—%20Radical%20Earth%20Studio" className="font-serif text-xl md:text-2xl hover:text-muted-foreground transition-colors">info@radical-earth.com</a>
         </div>
         <div className="md:col-span-3">
           <span className="font-sans text-xs tracking-widest uppercase block mb-4 md:mb-6">Studio</span>
@@ -30,8 +30,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-8">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+          <a href="https://www.instagram.com/radicalearthstudio?igsh=YWN4OTB1eWtncGlt&utm_source=qr" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Instagram</a>
+          <a href="https://www.linkedin.com/in/alexander-konchev-507a7497/" target="_blank" rel="noopener noreferrer" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
           <Link to="/collaborate" className="font-sans text-[10px] tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">Collaborate</Link>
         </div>
       </div>

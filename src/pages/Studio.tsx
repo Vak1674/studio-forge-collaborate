@@ -17,26 +17,40 @@ const Studio = () => {
         </div>
         <div className="md:col-span-4 md:col-start-9 flex flex-col justify-end">
           <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">
-            Radical Earth Studio is an emerging architecture practice with a clear conviction: design should be experiential, ecologically responsible, and unafraid to explore.
+            We are an emerging studio grounded in a sensitive and considered approach to design. Every project begins with deep understanding of the land, the brief, and the ultimately end-user experience.
           </p>
         </div>
       </section>
 
-      {/* Image */}
-      <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-6">
-        <div className="md:col-span-7 aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-secondary">
-          <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&auto=format"
-            alt="Studio environment"
-            className="w-full h-full object-cover brightness-95"
-          />
+      {/* About */}
+      <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6">
+        <div className="md:col-span-5 md:col-start-2">
+          <p className="font-serif text-xl md:text-2xl leading-relaxed text-muted-foreground">
+            Our practice is defined by exploration. We work holistically, keeping the big picture in view while pursuing the unexpected details that make spaces genuinely memorable. We are not afraid to take risks when they add value to the work.
+          </p>
         </div>
-        <div className="md:col-span-4 md:col-start-9 aspect-[3/4] overflow-hidden bg-secondary flex items-end">
+        <div className="md:col-span-4 md:col-start-8 flex flex-col justify-end">
+          <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
+            We draw on a trusted network of engineers, quantity surveyors, and specialist consultants to ensure every project is as buildable as it is beautiful.
+          </p>
+        </div>
+      </section>
+
+      {/* Person Image */}
+      <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="md:col-span-5 md:col-start-2 aspect-[3/4] overflow-hidden bg-secondary">
           <img
             src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format"
-            alt="Studio founder"
+            alt="Alexander Konchev — Director"
             className="w-full h-full object-cover"
           />
+        </div>
+        <div className="md:col-span-4 md:col-start-8 flex flex-col justify-end">
+          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-4">Director</span>
+          <h3 className="font-serif text-3xl md:text-4xl tracking-tighter mb-4">Alexander Konchev</h3>
+          <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
+            With extensive exposure to the hospitality sector — designing lodges and villas across diverse landscapes — Alexander brings a deep understanding of how architecture shapes guest experience and connects people to place.
+          </p>
         </div>
       </section>
 

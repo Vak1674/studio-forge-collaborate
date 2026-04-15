@@ -42,19 +42,6 @@ const projects = [
       wellnessRetreat3,
     ],
   },
-  {
-    slug: "the-clearing-house",
-    title: "The Clearing House",
-    location: "Hudson Valley, NY",
-    year: "2024",
-    type: "Residential",
-    description: "A weekend retreat that dissolves the boundary between structure and forest. Floor-to-ceiling glass walls retract entirely, transforming the living space into an elevated clearing within the woodland canopy.",
-    images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format",
-    ],
-  },
 ];
 
 const Projects = () => {
@@ -66,7 +53,7 @@ const Projects = () => {
       <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-6 md:px-8">
         <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-6">Selected Works</span>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]">
-          Three gestures <br />
+          Two gestures <br />
           <span className="italic">in permanence.</span>
         </h1>
       </section>

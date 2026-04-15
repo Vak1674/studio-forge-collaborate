@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import alexanderPhoto from "@/assets/alexander-konchev.jpeg";
 
 const Studio = () => {
   return (

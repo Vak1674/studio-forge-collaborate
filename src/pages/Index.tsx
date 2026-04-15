@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
 
 const HERO_IMG = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80&auto=format";
 const PROJECT_1 = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80&auto=format";
-const PROJECT_2 = "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80&auto=format";
 
 const Index = () => {
   return (
@@ -83,13 +83,13 @@ const Index = () => {
         </div>
 
         <div className="md:col-span-5 md:col-start-8 flex flex-col md:pt-24">
-          <Link to="/projects" className="block bg-secondary mb-6 md:mb-8 aspect-[3/4] overflow-hidden group">
-            <img src={PROJECT_2} alt="Hotel project" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <Link to="/projects/wellness-retreat" className="block bg-secondary mb-6 md:mb-8 aspect-[3/4] overflow-hidden group">
+            <img src={wellnessRetreat1} alt="Wellness Retreat" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           </Link>
           <div className="flex justify-between items-start">
             <div>
-              <h4 className="font-serif text-2xl md:text-3xl">Hôtel Mineral</h4>
-              <p className="font-sans text-xs tracking-widest uppercase text-muted-foreground mt-2">Sifnos, Greece — 2024</p>
+              <h4 className="font-serif text-2xl md:text-3xl">Wellness Retreat</h4>
+              <p className="font-sans text-xs tracking-widest uppercase text-muted-foreground mt-2">UAE — 2026</p>
             </div>
             <div className="font-sans text-xs border border-foreground/20 px-3 md:px-4 py-2 uppercase tracking-tighter">
               Hospitality

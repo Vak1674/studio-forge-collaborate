@@ -14,6 +14,14 @@ import wellnessRetreat3 from "@/assets/wellness-retreat-3.jpg";
 import wellnessRetreat4 from "@/assets/wellness-retreat-4.jpg";
 import wellnessRetreat5 from "@/assets/wellness-retreat-5.jpg";
 import wellnessRetreat6 from "@/assets/wellness-retreat-6.jpg";
+import houseNonna1 from "@/assets/house-nonna-1.jpg";
+import houseNonna2 from "@/assets/house-nonna-2.jpg";
+import houseNonna3 from "@/assets/house-nonna-3.jpg";
+import houseNonna4 from "@/assets/house-nonna-4.jpg";
+import houseNonna5 from "@/assets/house-nonna-5.jpg";
+import houseNonna6 from "@/assets/house-nonna-6.jpg";
+import houseNonna7 from "@/assets/house-nonna-7.jpg";
+import houseNonna8 from "@/assets/house-nonna-8.png";
 
 const projectsData: Record<string, {
   title: string;
@@ -24,23 +32,27 @@ const projectsData: Record<string, {
   details: { label: string; value: string }[];
   gallery: string[];
 }> = {
-  "casa-silencio": {
-    title: "Casa Silêncio",
-    location: "Comporta, Portugal",
-    year: "2025",
+  "house-nonna": {
+    title: "House Nonna",
+    location: "Bishopscourt, Cape Town",
+    year: "2026",
     type: "Residential",
-    description: "A private residence carved into the dunes of the Alentejo coast. Raw concrete volumes frame views of the Atlantic, while interior courtyards of local stone create intimate moments of stillness.",
+    description: "A single-family home inspired by the heritage cottages and dramatic landscape of Bishopscourt. Every room is crafted to hold a moment of surprise — from framed garden views to unexpected material transitions — while the spatial arrangement ensures a compact home feels effortlessly generous.",
     details: [
       { label: "Client", value: "Private" },
-      { label: "Size", value: "450 m²" },
-      { label: "Status", value: "In Progress" },
-      { label: "Scope", value: "Full architectural design & interiors" },
+      { label: "Size", value: "280 m²" },
+      { label: "Status", value: "In Design" },
+      { label: "Scope", value: "Full architectural design, interiors & landscape" },
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80&auto=format",
+      houseNonna3,
+      houseNonna4,
+      houseNonna1,
+      houseNonna2,
+      houseNonna5,
+      houseNonna6,
+      houseNonna7,
+      houseNonna8,
     ],
   },
   "wellness-retreat": {

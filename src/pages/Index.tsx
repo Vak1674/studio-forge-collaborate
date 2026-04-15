@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
 import houseNonna1 from "@/assets/house-nonna-3.jpg";
 
-const HERO_IMG = "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80&auto=format";
+import heroImg from "@/assets/wellness-retreat-4.jpg";
 
 const Index = () => {
   return (
@@ -31,7 +31,7 @@ const Index = () => {
       <section className="px-6 md:px-8 pb-20 md:pb-32">
         <Link to="/projects" className="block relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-secondary group">
           <img
-            src={HERO_IMG}
+            src={heroImg}
             alt="Featured architectural project"
             className="w-full h-full object-cover brightness-95 scale-105 transition-transform duration-1000 group-hover:scale-100"
           />

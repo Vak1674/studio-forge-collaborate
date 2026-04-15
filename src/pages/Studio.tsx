@@ -7,36 +7,30 @@ const Studio = () => {
       <Navigation />
 
       {/* Header */}
-      <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-6 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-8">
-        <div className="md:col-span-7">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-6">Our Studio</span>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]">
-            Young, restless, <br />
-            <span className="italic">grounded.</span>
-          </h1>
-        </div>
-        <div className="md:col-span-4 md:col-start-9 flex flex-col justify-end">
-          <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">
-            We are an emerging studio grounded in a sensitive and considered approach to design. Every project begins with deep understanding of the land, the brief, and the ultimately end-user experience.
-          </p>
-        </div>
+      <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-6 md:px-8">
+        <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-6">Our Studio</span>
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]">
+          Young, restless, <br />
+          <span className="italic">grounded.</span>
+        </h1>
       </section>
 
-      {/* About */}
-      <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6">
-        <div className="md:col-span-5 md:col-start-2">
+      {/* Studio Text */}
+      <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6">
+        <div className="md:col-span-6 md:col-start-2 space-y-8">
+          <p className="font-serif text-xl md:text-2xl leading-relaxed">
+            We are an emerging studio grounded in a sensitive and considered approach to design. Every project begins with deep understanding of the land, the brief, and the ultimately end-user experience.
+          </p>
           <p className="font-serif text-xl md:text-2xl leading-relaxed text-muted-foreground">
             Our practice is defined by exploration. We work holistically, keeping the big picture in view while pursuing the unexpected details that make spaces genuinely memorable. We are not afraid to take risks when they add value to the work.
           </p>
-        </div>
-        <div className="md:col-span-4 md:col-start-8 flex flex-col justify-end">
           <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-            We draw on a trusted network of engineers, quantity surveyors, and specialist consultants to ensure every project is as buildable as it is beautiful.
+            Our work sits at the intersection of experiential hospitality architecture and high-end residential design. We believe luxury isn't excess — it's precision, material honesty, and a deep respect for context and climate. We draw on a trusted network of engineers, quantity surveyors, and specialist consultants to ensure every project is as buildable as it is beautiful.
           </p>
         </div>
       </section>
 
-      {/* Person Image */}
+      {/* Director */}
       <section className="px-6 md:px-8 pb-20 md:pb-32 grid grid-cols-1 md:grid-cols-12 gap-6">
         <div className="md:col-span-5 md:col-start-2 aspect-[3/4] overflow-hidden bg-secondary">
           <img
@@ -50,18 +44,6 @@ const Studio = () => {
           <h3 className="font-serif text-3xl md:text-4xl tracking-tighter mb-4">Alexander Konchev</h3>
           <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
             With extensive exposure to the hospitality sector — designing lodges and villas across diverse landscapes — Alexander brings a deep understanding of how architecture shapes guest experience and connects people to place.
-          </p>
-        </div>
-      </section>
-
-      {/* Manifesto */}
-      <section className="px-6 md:px-8 py-20 md:py-32 bg-foreground text-primary-foreground">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl tracking-tighter leading-tight mb-12 md:mb-16">
-            We blend the <span className="italic">practical</span> with the <span className="italic">poetic</span>.
-          </h2>
-          <p className="font-sans text-base md:text-lg opacity-70 max-w-2xl mx-auto leading-relaxed">
-            Our work sits at the intersection of experiential hospitality architecture and high-end residential design. We believe luxury isn't excess — it's precision, material honesty, and a deep respect for context and climate.
           </p>
         </div>
       </section>

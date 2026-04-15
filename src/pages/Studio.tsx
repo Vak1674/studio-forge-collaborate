@@ -20,9 +20,9 @@ const Studio = () => {
           </div>
           <div className="aspect-[3/4] overflow-hidden bg-secondary">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format"
+              src={alexanderPhoto}
               alt="Alexander Konchev — Director"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top saturate-[0.85] contrast-[1.05] brightness-[1.02]"
             />
           </div>
         </div>

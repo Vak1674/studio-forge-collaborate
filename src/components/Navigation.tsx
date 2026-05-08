@@ -13,6 +13,7 @@ const Navigation = () => {
     { to: "/projects", label: "Works" },
     { to: "/studio", label: "Studio" },
     { to: "/approach", label: "Approach" },
+    { to: "/blog", label: "Journal" },
     { to: "/collaborate", label: "Collaborate" },
   ];
 

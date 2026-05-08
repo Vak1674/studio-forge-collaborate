@@ -22,6 +22,9 @@ import houseNonna5 from "@/assets/house-nonna-5.jpg";
 import houseNonna6 from "@/assets/house-nonna-6.jpg";
 import houseNonna7 from "@/assets/house-nonna-7.jpg";
 import houseNonna8 from "@/assets/house-nonna-8.png";
+import lodge1 from "@/assets/lodge-okavango-1.jpg";
+import lodge2 from "@/assets/lodge-okavango-2.jpg";
+import lodge3 from "@/assets/lodge-okavango-3.jpg";
 
 const projectsData: Record<string, {
   title: string;
@@ -76,23 +79,22 @@ const projectsData: Record<string, {
       wellnessRetreat6,
     ],
   },
-  "the-clearing-house": {
-    title: "The Clearing House",
-    location: "Hudson Valley, NY",
-    year: "2024",
-    type: "Residential",
-    description: "A weekend retreat that dissolves the boundary between structure and forest. Floor-to-ceiling glass walls retract entirely, transforming the living space into an elevated clearing within the woodland canopy.",
+  "delta-leaf-lodge": {
+    title: "Delta Leaf Lodge",
+    location: "Okavango Delta, Botswana",
+    year: "2026",
+    type: "Hospitality",
+    description: "A conceptual luxury lodge for the Okavango Delta, drawn from the layered geometry of delta leaves dispersed across the floodplain. Lightweight tented pavilions are carried on a slender timber frame raised above the water, allowing the architecture to touch the land lightly while immersing guests in the sound, light, and movement of one of Africa's most extraordinary ecosystems. Tenting, locally sourced timber, and passive ventilation define a sustainable design language calibrated to the delta's seasonal rhythms.",
     details: [
-      { label: "Client", value: "Private" },
-      { label: "Size", value: "320 m²" },
-      { label: "Status", value: "Completed" },
-      { label: "Scope", value: "Architecture & landscape integration" },
+      { label: "Client", value: "Confidential" },
+      { label: "Size", value: "Conceptual — 8 suites" },
+      { label: "Status", value: "Concept Design" },
+      { label: "Scope", value: "Architecture, interiors & landscape strategy" },
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80&auto=format",
+      lodge1,
+      lodge3,
+      lodge2,
     ],
   },
 };

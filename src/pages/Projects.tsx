@@ -14,6 +14,9 @@ import wellnessRetreat3 from "@/assets/wellness-retreat-3.jpg";
 import houseNonna1 from "@/assets/house-nonna-3.jpg";
 import houseNonna2 from "@/assets/house-nonna-4.jpg";
 import houseNonna3 from "@/assets/house-nonna-1.jpg";
+import lodge1 from "@/assets/lodge-okavango-1.jpg";
+import lodge2 from "@/assets/lodge-okavango-2.jpg";
+import lodge3 from "@/assets/lodge-okavango-3.jpg";
 
 const projects = [
   {
@@ -40,6 +43,19 @@ const projects = [
       wellnessRetreat1,
       wellnessRetreat2,
       wellnessRetreat3,
+    ],
+  },
+  {
+    slug: "delta-leaf-lodge",
+    title: "Delta Leaf Lodge",
+    location: "Okavango Delta, Botswana",
+    year: "2026",
+    type: "Hospitality",
+    description: "A conceptual luxury lodge whose layered canopy is drawn from the geometry of delta leaves floating across the floodplain. Lightweight tented pavilions sit on a slender timber frame raised above the water — a sustainable, low-impact architecture that touches the land lightly while immersing guests in the sound, light, and movement of the delta.",
+    images: [
+      lodge1,
+      lodge3,
+      lodge2,
     ],
   },
 ];

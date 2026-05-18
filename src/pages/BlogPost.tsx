@@ -8,47 +8,6 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === slug);
 
-  useEffect(() => {
-    if (!post) return;
-    const prevTitle = document.title;
-    document.title = `${post.title} — Radical Earth Studio`;
-
-    const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
-      let el = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute(attr, name);
-        document.head.appendChild(el);
-      }
-      el.setAttribute("content", content);
-    };
-
-    setMeta("description", post.excerpt);
-    setMeta("keywords", post.tags.join(", "));
-    setMeta("og:title", post.title, "property");
-    setMeta("og:description", post.excerpt, "property");
-    setMeta("og:type", "article", "property");
-    setMeta("article:published_time", post.date, "property");
-
-    // JSON-LD
-    const ld = document.createElement("script");
-    ld.type = "application/ld+json";
-    ld.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: post.title,
-      datePublished: post.date,
-      description: post.excerpt,
-      keywords: post.tags.join(", "),
-      author: { "@type": "Organization", name: "Radical Earth Studio" },
-    });
-    document.head.appendChild(ld);
-
-    return () => {
-      document.title = prevTitle;
-      document.head.removeChild(ld);
-    };
-  }, [post]);
 
   if (!post) {
     return (

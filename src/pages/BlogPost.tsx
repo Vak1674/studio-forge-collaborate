@@ -32,6 +32,25 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>{`${post.title} — Radical Earth Studio`}</title>
+        <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={post.tags.join(", ")} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content={post.date} />
+        <link rel="canonical" href={`https://radical-earth.lovable.app/blog/${slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: post.title,
+          datePublished: post.date,
+          description: post.excerpt,
+          keywords: post.tags.join(", "),
+          author: { "@type": "Organization", name: "Radical Earth Studio" },
+        })}</script>
+      </Helmet>
       <Navigation />
 
       <article className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-8">

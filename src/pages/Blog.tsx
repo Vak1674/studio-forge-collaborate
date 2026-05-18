@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { posts } from "@/data/posts";
@@ -6,6 +7,11 @@ import { posts } from "@/data/posts";
 const Blog = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Journal — Radical Earth Studio</title>
+        <meta name="description" content="Essays on context, ecology, and the craft of building places that belong. Field notes from the Radical Earth Studio team." />
+        <link rel="canonical" href="https://radical-earth.lovable.app/blog" />
+      </Helmet>
       <Navigation />
 
       <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-6 md:px-8">

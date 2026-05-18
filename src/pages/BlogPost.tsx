@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -8,51 +8,14 @@ const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === slug);
 
-  useEffect(() => {
-    if (!post) return;
-    const prevTitle = document.title;
-    document.title = `${post.title} — Radical Earth Studio`;
-
-    const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
-      let el = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute(attr, name);
-        document.head.appendChild(el);
-      }
-      el.setAttribute("content", content);
-    };
-
-    setMeta("description", post.excerpt);
-    setMeta("keywords", post.tags.join(", "));
-    setMeta("og:title", post.title, "property");
-    setMeta("og:description", post.excerpt, "property");
-    setMeta("og:type", "article", "property");
-    setMeta("article:published_time", post.date, "property");
-
-    // JSON-LD
-    const ld = document.createElement("script");
-    ld.type = "application/ld+json";
-    ld.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: post.title,
-      datePublished: post.date,
-      description: post.excerpt,
-      keywords: post.tags.join(", "),
-      author: { "@type": "Organization", name: "Radical Earth Studio" },
-    });
-    document.head.appendChild(ld);
-
-    return () => {
-      document.title = prevTitle;
-      document.head.removeChild(ld);
-    };
-  }, [post]);
 
   if (!post) {
     return (
       <div className="min-h-screen flex flex-col bg-background">
+        <Helmet>
+          <title>Post Not Found — Radical Earth Studio</title>
+          <link rel="canonical" href="https://radical-earth.lovable.app/blog" />
+        </Helmet>
         <Navigation />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
@@ -69,6 +32,25 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>{`${post.title} — Radical Earth Studio`}</title>
+        <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={post.tags.join(", ")} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content={post.date} />
+        <link rel="canonical" href={`https://radical-earth.lovable.app/blog/${slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: post.title,
+          datePublished: post.date,
+          description: post.excerpt,
+          keywords: post.tags.join(", "),
+          author: { "@type": "Organization", name: "Radical Earth Studio" },
+        })}</script>
+      </Helmet>
       <Navigation />
 
       <article className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-8">

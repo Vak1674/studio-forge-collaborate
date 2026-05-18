@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import alexanderPhoto from "@/assets/alexander-konchev.jpeg";
@@ -5,6 +6,11 @@ import alexanderPhoto from "@/assets/alexander-konchev.jpeg";
 const Studio = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Our Studio — Radical Earth Studio</title>
+        <meta name="description" content="Meet the team behind Radical Earth Studio. A young, exploratory practice grounded in context-led, experiential architecture." />
+        <link rel="canonical" href="https://radical-earth.lovable.app/studio" />
+      </Helmet>
       <Navigation />
 
       {/* Header + Text + Director */}

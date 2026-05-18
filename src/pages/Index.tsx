@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
@@ -9,6 +10,11 @@ import heroImg from "@/assets/wellness-retreat-4.jpg";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Radical Earth Studio — Experiential Architecture</title>
+        <meta name="description" content="An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility." />
+        <link rel="canonical" href="https://radical-earth.lovable.app/" />
+      </Helmet>
       <Navigation />
 
       {/* Hero */}

@@ -33,7 +33,7 @@ const Collaborate = () => {
         <div className="aspect-[21/9] w-full overflow-hidden bg-secondary">
           <img
             src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1600&q=80&auto=format"
-            alt="Studio workspace"
+            alt="Bright, open studio workspace with material samples and architectural drawings spread across a large table"
             className="w-full h-full object-cover brightness-95"
           />
         </div>

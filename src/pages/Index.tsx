@@ -18,6 +18,23 @@ const Index = () => {
         <meta property="og:url" content="https://radical-earth.lovable.app/" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Radical Earth Studio",
+          url: "https://radical-earth.lovable.app/",
+          description: "An emerging architecture practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility.",
+          sameAs: [
+            "https://www.linkedin.com/in/alexander-konchev-507a7497/",
+            "https://www.instagram.com/radicalearthstudio",
+          ],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Radical Earth Studio",
+          url: "https://radical-earth.lovable.app/",
+        })}</script>
       </Helmet>
       <Navigation />
 

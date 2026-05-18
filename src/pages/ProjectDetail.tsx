@@ -135,6 +135,18 @@ const ProjectDetail = () => {
         <meta property="og:url" content={`https://radical-earth.lovable.app/projects/${slug}`} />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://radical-earth.lovable.app/projects/${slug}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          name: project.title,
+          description: project.description,
+          url: `https://radical-earth.lovable.app/projects/${slug}`,
+          genre: project.type,
+          locationCreated: { "@type": "Place", name: project.location },
+          dateCreated: project.year,
+          image: project.gallery.map((img) => `https://radical-earth.lovable.app${img}`),
+          creator: { "@type": "Organization", name: "Radical Earth Studio", url: "https://radical-earth.lovable.app/" },
+        })}</script>
       </Helmet>
       <Navigation />
 

@@ -10,6 +10,10 @@ const Blog = () => {
       <Helmet>
         <title>Journal — Radical Earth Studio</title>
         <meta name="description" content="Essays on context, ecology, and the craft of building places that belong. Field notes from the Radical Earth Studio team." />
+        <meta property="og:title" content="Journal — Radical Earth Studio" />
+        <meta property="og:description" content="Essays on context, ecology, and the craft of building places that belong. Field notes from the Radical Earth Studio team." />
+        <meta property="og:url" content="https://radical-earth.lovable.app/blog" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/blog" />
       </Helmet>
       <Navigation />

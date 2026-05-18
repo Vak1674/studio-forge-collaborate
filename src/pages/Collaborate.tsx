@@ -8,6 +8,10 @@ const Collaborate = () => {
       <Helmet>
         <title>Collaborate — Radical Earth Studio</title>
         <meta name="description" content="Start a conversation with Radical Earth Studio. We work with private clients, hospitality visionaries, and fellow creatives." />
+        <meta property="og:title" content="Collaborate — Radical Earth Studio" />
+        <meta property="og:description" content="Start a conversation with Radical Earth Studio. We work with private clients, hospitality visionaries, and fellow creatives." />
+        <meta property="og:url" content="https://radical-earth.lovable.app/collaborate" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/collaborate" />
       </Helmet>
       <Navigation />

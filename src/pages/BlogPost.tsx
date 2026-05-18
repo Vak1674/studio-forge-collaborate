@@ -12,6 +12,10 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="min-h-screen flex flex-col bg-background">
+        <Helmet>
+          <title>Post Not Found — Radical Earth Studio</title>
+          <link rel="canonical" href="https://radical-earth.lovable.app/blog" />
+        </Helmet>
         <Navigation />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">

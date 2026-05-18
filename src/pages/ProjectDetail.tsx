@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import {
@@ -122,6 +123,11 @@ const ProjectDetail = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>{project.title} — Radical Earth Studio</title>
+        <meta name="description" content={project.description} />
+        <link rel="canonical" href={`https://radical-earth.lovable.app/projects/${slug}`} />
+      </Helmet>
       <Navigation />
 
       {/* Header */}

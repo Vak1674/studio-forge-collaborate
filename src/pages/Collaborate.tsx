@@ -1,9 +1,15 @@
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const Collaborate = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Collaborate — Radical Earth Studio</title>
+        <meta name="description" content="Start a conversation with Radical Earth Studio. We work with private clients, hospitality visionaries, and fellow creatives." />
+        <link rel="canonical" href="https://radical-earth.lovable.app/collaborate" />
+      </Helmet>
       <Navigation />
 
       {/* Header */}

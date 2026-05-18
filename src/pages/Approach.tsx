@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -31,6 +32,11 @@ const steps = [
 const Approach = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Our Approach — Radical Earth Studio</title>
+        <meta name="description" content="Discover how we work — context-led, exploratory, and experiential. A four-step process from listening to delivery." />
+        <link rel="canonical" href="https://radical-earth.lovable.app/approach" />
+      </Helmet>
       <Navigation />
 
       {/* Header */}

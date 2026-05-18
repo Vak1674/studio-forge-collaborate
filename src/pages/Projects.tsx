@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import {
@@ -63,6 +64,11 @@ const projects = [
 const Projects = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Selected Works — Radical Earth Studio</title>
+        <meta name="description" content="Explore our portfolio of hospitality and residential architecture — from desert wellness retreats to Cape Town residences." />
+        <link rel="canonical" href="https://radical-earth.lovable.app/projects" />
+      </Helmet>
       <Navigation />
 
       {/* Header */}

@@ -39,6 +39,7 @@ const BlogPost = () => {
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://radical-earth.lovable.app/blog/${slug}`} />
         <meta property="article:published_time" content={post.date} />
         <link rel="canonical" href={`https://radical-earth.lovable.app/blog/${slug}`} />
         <script type="application/ld+json">{JSON.stringify({

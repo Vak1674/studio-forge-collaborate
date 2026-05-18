@@ -75,8 +75,8 @@ const Projects = () => {
       <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-6 md:px-8">
         <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-6">Selected Works</span>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]">
-          Two gestures <br />
-          <span className="italic">in permanence.</span>
+          Selected <br />
+          <span className="italic">Architectural Works.</span>
         </h1>
       </section>
 

@@ -44,9 +44,9 @@ const Approach = () => {
         <div className="md:col-span-7">
           <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-6">Our Approach</span>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]">
-            Context-led. <br />
-            Exploratory. <br />
-            <span className="italic">Experiential.</span>
+            Our Approach: <br />
+            Context-Led, <br />
+            <span className="italic">Experiential Design.</span>
           </h1>
         </div>
         <div className="md:col-span-4 md:col-start-9 flex flex-col justify-end">
@@ -61,7 +61,7 @@ const Approach = () => {
         <div className="aspect-[21/9] w-full overflow-hidden bg-secondary">
           <img
             src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80&auto=format"
-            alt="Architectural process"
+            alt="Close-up of architectural model making — layered material studies exploring form and texture"
             className="w-full h-full object-cover brightness-95"
           />
         </div>

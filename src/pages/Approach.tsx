@@ -35,6 +35,10 @@ const Approach = () => {
       <Helmet>
         <title>Our Approach — Radical Earth Studio</title>
         <meta name="description" content="Discover how we work — context-led, exploratory, and experiential. A four-step process from listening to delivery." />
+        <meta property="og:title" content="Our Approach — Radical Earth Studio" />
+        <meta property="og:description" content="Discover how we work — context-led, exploratory, and experiential. A four-step process from listening to delivery." />
+        <meta property="og:url" content="https://radical-earth.lovable.app/approach" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/approach" />
       </Helmet>
       <Navigation />

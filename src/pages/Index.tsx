@@ -13,6 +13,10 @@ const Index = () => {
       <Helmet>
         <title>Radical Earth Studio — Experiential Architecture</title>
         <meta name="description" content="An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility." />
+        <meta property="og:title" content="Radical Earth Studio — Experiential Architecture" />
+        <meta property="og:description" content="An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility." />
+        <meta property="og:url" content="https://radical-earth.lovable.app/" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/" />
       </Helmet>
       <Navigation />

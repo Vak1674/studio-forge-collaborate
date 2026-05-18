@@ -67,6 +67,10 @@ const Projects = () => {
       <Helmet>
         <title>Selected Works — Radical Earth Studio</title>
         <meta name="description" content="Explore our portfolio of hospitality and residential architecture — from desert wellness retreats to Cape Town residences." />
+        <meta property="og:title" content="Selected Works — Radical Earth Studio" />
+        <meta property="og:description" content="Explore our portfolio of hospitality and residential architecture — from desert wellness retreats to Cape Town residences." />
+        <meta property="og:url" content="https://radical-earth.lovable.app/projects" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/projects" />
       </Helmet>
       <Navigation />

@@ -9,6 +9,10 @@ const Studio = () => {
       <Helmet>
         <title>Our Studio — Radical Earth Studio</title>
         <meta name="description" content="Meet the team behind Radical Earth Studio. A young, exploratory practice grounded in context-led, experiential architecture." />
+        <meta property="og:title" content="Our Studio — Radical Earth Studio" />
+        <meta property="og:description" content="Meet the team behind Radical Earth Studio. A young, exploratory practice grounded in context-led, experiential architecture." />
+        <meta property="og:url" content="https://radical-earth.lovable.app/studio" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/studio" />
       </Helmet>
       <Navigation />

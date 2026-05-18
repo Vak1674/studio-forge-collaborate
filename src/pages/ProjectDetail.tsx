@@ -130,6 +130,10 @@ const ProjectDetail = () => {
       <Helmet>
         <title>{project.title} — Radical Earth Studio</title>
         <meta name="description" content={project.description} />
+        <meta property="og:title" content={`${project.title} — Radical Earth Studio`} />
+        <meta property="og:description" content={project.description} />
+        <meta property="og:url" content={`https://radical-earth.lovable.app/projects/${slug}`} />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://radical-earth.lovable.app/projects/${slug}`} />
       </Helmet>
       <Navigation />

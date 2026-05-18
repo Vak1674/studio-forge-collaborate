@@ -106,11 +106,15 @@ const ProjectDetail = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex flex-col bg-background">
-        <Navigation />
-        <div className="flex-1 flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="font-serif text-4xl mb-4">Project not found</h1>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Helmet>
+        <title>Project Not Found — Radical Earth Studio</title>
+        <link rel="canonical" href="https://radical-earth.lovable.app/projects" />
+      </Helmet>
+      <Navigation />
+      <div className="flex-1 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="font-serif text-4xl mb-4">Project not found</h1>
             <Link to="/projects" className="font-sans text-sm tracking-widest uppercase border-b border-foreground pb-1">
               Back to Works
             </Link>

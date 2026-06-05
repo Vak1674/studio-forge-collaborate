@@ -5,8 +5,8 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
   const [exit, setExit] = useState(false);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setExit(true), 2200);
-    const t2 = setTimeout(() => onFinish(), 3000);
+    const t1 = setTimeout(() => setExit(true), 4000);
+    const t2 = setTimeout(() => onFinish(), 4800);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);

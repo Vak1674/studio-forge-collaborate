@@ -47,24 +47,26 @@ const Index = () => {
         {/* Gradient overlay for legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-foreground/40" />
 
-        <div className="relative w-full px-4 md:px-8 pt-28 md:pt-40 pb-12 md:pb-20 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 text-primary-foreground">
-          <div className="md:col-span-8">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] leading-[0.85] tracking-tighter">
-              Architecture <br />
-              <span className="italic pl-4 md:pl-12 lg:pl-24">Rooted in</span> <br />
-              Experience
-            </h1>
-          </div>
-          <div className="md:col-span-4 flex flex-col justify-end pb-2 md:pb-4">
-            <p className="font-sans text-sm md:text-lg max-w-[35ch] leading-relaxed opacity-90">
-              An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility. We craft spaces that connect people to place.
-            </p>
-            <Link
-              to="/projects"
-              className="mt-6 inline-block self-start font-sans text-[10px] md:text-xs tracking-widest uppercase border-b border-primary-foreground pb-2 hover:pb-3 transition-all"
-            >
-              View Selected Works →
-            </Link>
+        <div className="relative w-full px-4 md:px-8 pt-28 md:pt-40 pb-12 md:pb-20 text-primary-foreground">
+          <div className="bg-foreground/30 backdrop-blur-md rounded-sm p-6 md:p-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+            <div className="md:col-span-8">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] leading-[0.85] tracking-tighter">
+                Architecture <br />
+                <span className="italic pl-4 md:pl-12 lg:pl-24">Rooted in</span> <br />
+                Experience
+              </h1>
+            </div>
+            <div className="md:col-span-4 flex flex-col justify-end pb-2 md:pb-4">
+              <p className="font-sans text-sm md:text-lg max-w-[35ch] leading-relaxed opacity-90">
+                An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility. We craft spaces that connect people to place.
+              </p>
+              <Link
+                to="/projects"
+                className="mt-6 inline-block self-start font-sans text-[10px] md:text-xs tracking-widest uppercase border-b border-primary-foreground pb-2 hover:pb-3 transition-all"
+              >
+                View Selected Works →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

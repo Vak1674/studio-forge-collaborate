@@ -19,7 +19,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 mix-blend-difference px-4 md:px-8 py-6 md:py-10 flex justify-between items-center">
+      <nav className={`fixed top-0 w-full z-50 px-4 md:px-8 py-6 md:py-10 flex justify-between items-center ${location.pathname === '/' ? 'bg-foreground/30 backdrop-blur-md' : 'mix-blend-difference'}`}>
         <Link to="/" className="block">
           <img src={logo} alt="Radical Earth Studio" className="h-14 md:h-20 invert" />
         </Link>

@@ -15,7 +15,7 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[200] flex items-center justify-center bg-foreground transition-opacity duration-700 ${
+      className={`fixed inset-0 z-[200] flex items-center justify-center bg-background transition-opacity duration-700 ${
         exit ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -23,9 +23,9 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
         <img
           src={logo}
           alt="Radical Earth Studio"
-          className="h-24 md:h-36 invert splash-fade"
+          className="h-32 md:h-48 splash-fade"
         />
-        <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-primary-foreground/70 splash-line">
+        <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-foreground/70 splash-line">
           Radical Earth Studio
         </span>
       </div>

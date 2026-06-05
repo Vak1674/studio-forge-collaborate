@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import wellnessRetreat1 from "@/assets/wellness-retreat-1.jpg";
-import houseNonna1 from "@/assets/house-nonna-3.jpg";
-
-import heroImg from "@/assets/wellness-retreat-4.jpg";
+import wellnessRetreat1 from "@/assets/wellness-exterior.jpg";
+import houseNonna1 from "@/assets/house-nonna-front.jpg";
+import heroImg from "@/assets/hero-house-nonna.jpg";
 
 const Index = () => {
   return (
@@ -38,38 +37,40 @@ const Index = () => {
       </Helmet>
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative pt-28 md:pt-48 pb-12 md:pb-24 px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
-        <div className="md:col-span-7">
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] leading-[0.85] tracking-tighter">
-            Architecture <br />
-            <span className="italic pl-4 md:pl-12 lg:pl-24">Rooted in</span> <br />
-            Experience
-          </h1>
-        </div>
-        <div className="md:col-span-5 flex flex-col justify-end pb-2 md:pb-4">
-          <p className="font-sans text-sm md:text-lg max-w-[35ch] leading-relaxed text-muted-foreground">
-            An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility. We craft spaces that connect people to place.
-          </p>
-        </div>
-      </section>
+      {/* Hero with background image */}
+      <section className="relative min-h-screen flex items-end overflow-hidden">
+        <img
+          src={heroImg}
+          alt="Radical Earth Studio — House Nonna in Bishopscourt, Cape Town, set against the mountainside"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        {/* Gradient overlay for legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-foreground/40" />
 
-      {/* Featured Image */}
-      <section className="px-4 md:px-8 pb-16 md:pb-32">
-        <Link to="/projects" className="block relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-secondary group">
-          <img
-            src={heroImg}
-            alt="Featured architectural project"
-            className="w-full h-full object-cover brightness-95 scale-105 transition-transform duration-1000 group-hover:scale-100"
-          />
-          <div className="absolute bottom-4 md:bottom-8 right-4 md:right-8 font-sans text-[10px] md:text-xs tracking-widest uppercase text-primary-foreground">
-            View Selected Works →
+        <div className="relative w-full px-4 md:px-8 pt-28 md:pt-40 pb-12 md:pb-20 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 text-primary-foreground">
+          <div className="md:col-span-8">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] leading-[0.85] tracking-tighter">
+              Architecture <br />
+              <span className="italic pl-4 md:pl-12 lg:pl-24">Rooted in</span> <br />
+              Experience
+            </h1>
           </div>
-        </Link>
+          <div className="md:col-span-4 flex flex-col justify-end pb-2 md:pb-4">
+            <p className="font-sans text-sm md:text-lg max-w-[35ch] leading-relaxed opacity-90">
+              An emerging practice at the intersection of experiential hospitality, luxury residential design, and ecological responsibility. We craft spaces that connect people to place.
+            </p>
+            <Link
+              to="/projects"
+              className="mt-6 inline-block self-start font-sans text-[10px] md:text-xs tracking-widest uppercase border-b border-primary-foreground pb-2 hover:pb-3 transition-all"
+            >
+              View Selected Works →
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Philosophy */}
-      <section className="px-4 md:px-8 py-16 md:py-40 bg-foreground text-primary-foreground grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6">
+      <section className="px-4 md:px-8 py-16 md:py-32 bg-foreground text-primary-foreground grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6">
         <div className="md:col-start-2 md:col-span-5">
           <span className="font-sans text-[10px] md:text-xs tracking-widest uppercase opacity-50 mb-4 md:mb-8 block">Our Ethos</span>
           <h2 className="font-serif text-2xl md:text-4xl lg:text-5xl leading-tight">
@@ -96,7 +97,7 @@ const Index = () => {
       <section className="px-4 md:px-8 py-16 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-y-24 gap-x-6">
         <div className="md:col-span-6 flex flex-col">
           <Link to="/projects/house-nonna" className="block bg-secondary mb-4 md:mb-8 aspect-[4/5] overflow-hidden group">
-            <img src={houseNonna1} alt="House Nonna" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <img src={houseNonna1} alt="House Nonna front elevation" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           </Link>
           <div className="flex justify-between items-start">
             <div>
@@ -111,7 +112,7 @@ const Index = () => {
 
         <div className="md:col-span-5 md:col-start-8 flex flex-col md:pt-24">
           <Link to="/projects/wellness-retreat" className="block bg-secondary mb-4 md:mb-8 aspect-[3/4] overflow-hidden group">
-            <img src={wellnessRetreat1} alt="Wellness Retreat" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <img src={wellnessRetreat1} alt="Wellness Retreat desert exterior" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           </Link>
           <div className="flex justify-between items-start">
             <div>

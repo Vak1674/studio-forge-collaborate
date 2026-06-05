@@ -48,7 +48,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-foreground/40" />
 
         <div className="relative w-full px-4 md:px-8 pt-28 md:pt-40 pb-12 md:pb-20 text-primary-foreground">
-          <div className="bg-foreground/30 backdrop-blur-md rounded-sm p-6 md:p-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
             <div className="md:col-span-8">
               <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] leading-[0.85] tracking-tighter">
                 Architecture <br />

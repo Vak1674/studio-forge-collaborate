@@ -61,7 +61,7 @@ const Collaborate = () => {
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tighter text-center mb-16">
             Services
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Design Consulting",
               "Design Resolution",
@@ -72,11 +72,11 @@ const Collaborate = () => {
             ].map((service) => (
               <div
                 key={service}
-                className="border border-border bg-secondary p-8 min-h-[180px] flex flex-col justify-end"
+                className="bg-secondary border border-border p-6 md:p-8 flex items-center justify-center text-center min-h-[140px]"
               >
-                <h3 className="font-serif text-lg md:text-xl tracking-tight">
+                <span className="font-serif text-lg md:text-xl tracking-tight">
                   {service}
-                </h3>
+                </span>
               </div>
             ))}
           </div>

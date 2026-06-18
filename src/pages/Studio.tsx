@@ -63,14 +63,12 @@ const Studio = () => {
       {/* What We Do */}
       <section className="px-6 md:px-8 py-20 md:py-32 bg-secondary">
         <div className="max-w-6xl mx-auto">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-12">What We Do</span>
+          <span className="font-sans text-sm md:text-base tracking-widest uppercase text-muted-foreground block mb-12">What We Do</span>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Hospitality Architecture",
               "Luxury Residential",
               "Eco-Conscious Design",
-              "Interiors & Landscape",
-              "Concept & Feasibility Studies",
             ].map((item) => (
               <div
                 key={item}

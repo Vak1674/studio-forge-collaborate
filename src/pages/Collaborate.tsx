@@ -19,7 +19,6 @@ const Collaborate = () => {
       {/* Header */}
       <section className="pt-32 md:pt-48 pb-12 md:pb-20 px-6 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-8">
         <div className="md:col-span-7">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-6">Collaborate</span>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-[0.9]">
             Architecture is a <br />
             <span className="italic">conversation.</span>
@@ -32,31 +31,8 @@ const Collaborate = () => {
         </div>
       </section>
 
-      {/* Image */}
-      <section className="px-6 md:px-8 pb-20 md:pb-32">
-        <div className="aspect-[21/9] w-full overflow-hidden bg-secondary">
-          <img
-            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1600&q=80&auto=format"
-            alt="Bright, open studio workspace with material samples and architectural drawings spread across a large table"
-            className="w-full h-full object-cover brightness-95"
-          />
-        </div>
-      </section>
-
-      {/* Philosophy */}
-      <section className="px-6 md:px-8 py-20 md:py-32 bg-foreground text-primary-foreground">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl tracking-tighter leading-tight mb-12 md:mb-16">
-            We don't work <span className="italic">for</span> our clients. We work <span className="italic">with</span> them.
-          </h2>
-          <p className="font-sans text-base md:text-lg opacity-70 max-w-2xl mx-auto leading-relaxed">
-            Every project begins with deep listening. We take the time to understand your vision, your rituals, the way light enters your mornings. From there, we build together.
-          </p>
-        </div>
-      </section>
-
       {/* Services */}
-      <section className="px-6 md:px-8 py-20 md:py-32">
+      <section className="px-6 md:px-8 pb-20 md:pb-32">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tighter text-center mb-16">
             Services
@@ -81,7 +57,18 @@ const Collaborate = () => {
             ))}
           </div>
         </div>
+      </section>
 
+      {/* Philosophy */}
+      <section className="px-6 md:px-8 py-20 md:py-32 bg-foreground text-primary-foreground">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl tracking-tighter leading-tight mb-12 md:mb-16">
+            We don't work <span className="italic">for</span> our clients. We work <span className="italic">with</span> them.
+          </h2>
+          <p className="font-sans text-base md:text-lg opacity-70 max-w-2xl mx-auto leading-relaxed">
+            Every project begins with deep listening. We take the time to understand your vision, your rituals, the way light enters your mornings. From there, we build together.
+          </p>
+        </div>
       </section>
 
       {/* CTA */}

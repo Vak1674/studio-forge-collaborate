@@ -82,14 +82,6 @@ const Collaborate = () => {
           </div>
         </div>
 
-        <div className="mt-20 md:mt-32 max-w-4xl mx-auto text-center">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">Principles</span>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 font-serif text-lg md:text-xl">
-            <span>Fearless Exploration</span>
-            <span>Practical Ambition</span>
-            <span>Ecological Responsibility</span>
-          </div>
-        </div>
       </section>
 
       {/* CTA */}

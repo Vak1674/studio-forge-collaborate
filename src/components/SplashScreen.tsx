@@ -32,10 +32,6 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
           0% { opacity: 0; transform: scale(0.92); filter: blur(6px); }
           100% { opacity: 1; transform: scale(1); filter: blur(0); }
         }
-        @keyframes splashLine {
-          0% { opacity: 0; letter-spacing: 0.2em; }
-          100% { opacity: 1; letter-spacing: 0.4em; }
-        }
         @keyframes splashRise {
           0% { transform: translateY(8px); }
           100% { transform: translateY(0); }

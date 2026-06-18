@@ -61,27 +61,48 @@ const Studio = () => {
       </section>
 
       {/* What We Do */}
-      <section className="px-6 md:px-8 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6">
-        <div className="md:col-span-5 md:col-start-2">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">What We Do</span>
-          <ul className="space-y-4 font-serif text-lg md:text-xl">
-            <li>— Hospitality Architecture</li>
-            <li>— Luxury Residential</li>
-            <li>— Eco-Conscious Design</li>
-            <li>— Interiors & Landscape</li>
-            <li>— Concept & Feasibility Studies</li>
-          </ul>
+      <section className="px-6 md:px-8 py-20 md:py-32 bg-secondary">
+        <div className="max-w-6xl mx-auto">
+          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-12">What We Do</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              "Hospitality Architecture",
+              "Luxury Residential",
+              "Eco-Conscious Design",
+              "Interiors & Landscape",
+              "Concept & Feasibility Studies",
+            ].map((item) => (
+              <div
+                key={item}
+                className="bg-background border border-border p-6 md:p-8 flex items-center justify-center text-center min-h-[140px]"
+              >
+                <span className="font-serif text-lg md:text-xl tracking-tight">{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
-        <div className="md:col-span-4 md:col-start-8">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">How We Think</span>
-          <ul className="space-y-4 font-serif text-lg md:text-xl">
-            <li>— Fearlessly Exploratory</li>
-            <li>— Practically Grounded</li>
-            <li>— Deeply Collaborative</li>
-            <li>— Context-Led</li>
-            <li>— Material Honesty</li>
-          </ul>
+      {/* How We Think */}
+      <section className="px-6 md:px-8 py-20 md:py-32">
+        <div className="max-w-6xl mx-auto">
+          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-12">How We Think</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              "Fearlessly Exploratory",
+              "Practically Grounded",
+              "Deeply Collaborative",
+              "Context-Led",
+              "Material Honesty",
+            ].map((item) => (
+              <div
+                key={item}
+                className="bg-secondary border border-border p-6 md:p-8 flex items-center justify-center text-center min-h-[140px]"
+              >
+                <span className="font-serif text-lg md:text-xl tracking-tight">{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

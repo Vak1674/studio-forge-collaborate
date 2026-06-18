@@ -37,7 +37,6 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
           100% { transform: translateY(0); }
         }
         .splash-fade { animation: splashFade 1.4s ease-out both; }
-        .splash-line { animation: splashLine 1.6s ease-out 0.6s both; }
         .splash-rise { animation: splashRise 1.4s ease-out both; }
       `}</style>
     </div>

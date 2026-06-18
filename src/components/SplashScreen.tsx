@@ -25,9 +25,6 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
           alt="Radical Earth Studio"
           className="h-32 md:h-48 splash-fade"
         />
-        <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-foreground/70 splash-line">
-          Radical Earth Studio
-        </span>
       </div>
 
       <style>{`

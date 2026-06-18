@@ -128,20 +128,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Collaboration CTA */}
-      <section className="px-4 md:px-8 py-16 md:py-32 bg-secondary text-center">
-        <span className="font-sans text-[10px] md:text-xs tracking-widest uppercase text-muted-foreground block mb-4 md:mb-6">Open to Collaboration</span>
-        <h2 className="font-serif text-2xl md:text-5xl lg:text-6xl tracking-tighter max-w-3xl mx-auto leading-tight mb-6 md:mb-12">
-          Great architecture begins with <span className="italic">great partnerships</span>.
-        </h2>
-        <Link
-          to="/collaborate"
-          className="inline-block font-sans text-xs md:text-sm font-medium tracking-widest uppercase border-b border-foreground pb-2 hover:pb-3 transition-all"
-        >
-          Learn about working with us →
-        </Link>
-      </section>
-
       <Footer />
     </div>
   );

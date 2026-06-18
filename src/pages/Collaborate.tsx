@@ -57,28 +57,32 @@ const Collaborate = () => {
 
       {/* Services */}
       <section className="px-6 md:px-8 py-20 md:py-32">
-        <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-16">Services</span>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            "Design Consulting",
-            "Design Resolution",
-            "Rendering & Visualisation",
-            "Presentation Work",
-            "Concept Development",
-            "Feasibility Studies",
-          ].map((service, i) => (
-            <div
-              key={service}
-              className="border border-border bg-secondary p-8 min-h-[180px] flex flex-col justify-between group hover:border-foreground transition-colors duration-300"
-            >
-              <span className="font-serif text-3xl text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase mt-6">
-                {service}
-              </h3>
-            </div>
-          ))}
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tighter text-center mb-16">
+            Services
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Design Consulting",
+              "Design Resolution",
+              "Rendering & Visualisation",
+              "Presentation Work",
+              "Concept Development",
+              "Feasibility Studies",
+            ].map((service, i) => (
+              <div
+                key={service}
+                className="border border-border bg-secondary p-8 min-h-[180px] flex flex-col justify-between"
+              >
+                <span className="font-serif text-4xl md:text-5xl text-muted-foreground">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="font-serif text-lg md:text-xl tracking-tight mt-6">
+                  {service}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-20 md:mt-32 max-w-4xl mx-auto text-center">

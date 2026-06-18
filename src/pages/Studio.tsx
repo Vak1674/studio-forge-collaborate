@@ -64,50 +64,24 @@ const Studio = () => {
       <section className="px-6 md:px-8 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6">
         <div className="md:col-span-5 md:col-start-2">
           <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">What We Do</span>
-          <div className="space-y-10">
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Hospitality Architecture</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Boutique hotels, retreats, and experiential venues where architecture becomes the story guests remember long after they leave.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Luxury Residential</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Homes that respond to landscape, light, and the specific rhythms of how people live — not templates, but tailored spatial experiences.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Eco-Conscious Design</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Sustainability isn't a checkbox. We integrate passive strategies, local materials, and regenerative thinking from day one — because beautiful design and responsible design are the same thing.
-              </p>
-            </div>
-          </div>
+          <ul className="space-y-4 font-serif text-lg md:text-xl">
+            <li>— Hospitality Architecture</li>
+            <li>— Luxury Residential</li>
+            <li>— Eco-Conscious Design</li>
+            <li>— Interiors & Landscape</li>
+            <li>— Concept & Feasibility Studies</li>
+          </ul>
         </div>
 
         <div className="md:col-span-4 md:col-start-8">
           <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">How We Think</span>
-          <div className="space-y-10">
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Fearlessly Exploratory</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Being a young studio means freedom — freedom to question convention, test new ideas, and approach every project with fresh eyes. We don't carry the weight of "how things have always been done."
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Practically Grounded</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Bold ideas mean nothing without rigour. We balance ambition with buildability, bringing engineering and cost consultants into the conversation early so that creative vision and practical reality walk hand in hand.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Deeply Collaborative</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                We thrive on working alongside clients, makers, and specialists. The best architecture comes from genuine dialogue — not ego.
-              </p>
-            </div>
-          </div>
+          <ul className="space-y-4 font-serif text-lg md:text-xl">
+            <li>— Fearlessly Exploratory</li>
+            <li>— Practically Grounded</li>
+            <li>— Deeply Collaborative</li>
+            <li>— Context-Led</li>
+            <li>— Material Honesty</li>
+          </ul>
         </div>
       </section>
 

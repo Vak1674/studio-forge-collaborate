@@ -59,48 +59,35 @@ const Collaborate = () => {
       <section className="px-6 md:px-8 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6">
         <div className="md:col-span-5 md:col-start-2">
           <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">Who We Work With</span>
-          <div className="space-y-10">
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Private Clients</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Individuals and families seeking homes that transcend convention — spaces that feel inevitable, as if they've always existed.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Hospitality Visionaries</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Hoteliers and developers who understand that architecture is the first chapter of every guest experience.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Fellow Creatives</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Interior designers, landscape architects, and artists who share our commitment to material honesty and spatial emotion.
-              </p>
-            </div>
-          </div>
+          <ul className="space-y-4 font-serif text-lg md:text-xl">
+            <li>— Private Clients</li>
+            <li>— Hospitality Visionaries</li>
+            <li>— Developers</li>
+            <li>— Fellow Creatives</li>
+          </ul>
         </div>
 
         <div className="md:col-span-4 md:col-start-8">
           <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">What We Bring</span>
-          <div className="space-y-10">
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Fearless Exploration</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                We're not afraid to push boundaries, test unconventional ideas, and challenge assumptions — that's how the best work happens.
-              </p>
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Consulting</h3>
+              <ul className="space-y-2 font-serif text-base md:text-lg text-muted-foreground">
+                <li>— Design Consulting</li>
+                <li>— Design Resolution</li>
+                <li>— Rendering & Visualisation</li>
+                <li>— Presentation Work</li>
+                <li>— Concept Development</li>
+                <li>— Feasibility Studies</li>
+              </ul>
             </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Practical Ambition</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Bold design grounded in buildability. We bring consultants in early to ensure every vision can become reality.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase">Ecological Responsibility</h3>
-              <p className="font-serif text-lg italic text-muted-foreground leading-relaxed">
-                Sustainability isn't an add-on — it's woven into every decision, from material sourcing to passive design strategies.
-              </p>
+            <div>
+              <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Principles</h3>
+              <ul className="space-y-2 font-serif text-base md:text-lg text-muted-foreground">
+                <li>— Fearless Exploration</li>
+                <li>— Practical Ambition</li>
+                <li>— Ecological Responsibility</li>
+              </ul>
             </div>
           </div>
         </div>

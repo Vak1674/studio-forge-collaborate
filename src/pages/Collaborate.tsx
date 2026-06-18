@@ -6,10 +6,10 @@ const Collaborate = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Collaborate — Radical Earth Studio</title>
-        <meta name="description" content="Start a conversation with Radical Earth Studio. We work with private clients, hospitality visionaries, and fellow creatives." />
-        <meta property="og:title" content="Collaborate — Radical Earth Studio" />
-        <meta property="og:description" content="Start a conversation with Radical Earth Studio. We work with private clients, hospitality visionaries, and fellow creatives." />
+        <title>Hospitality Design Architects & Interiors | Radical Earth</title>
+        <meta name="description" content="Hospitality design architects and interior specialists. Eco-conscious architecture and procurement services by Radical Earth Studio. Start your project today." />
+        <meta property="og:title" content="Hospitality Design Architects & Interiors | Radical Earth" />
+        <meta property="og:description" content="Hospitality design architects and interior specialists. Eco-conscious architecture and procurement services by Radical Earth Studio. Start your project today." />
         <meta property="og:url" content="https://radical-earth.lovable.app/collaborate" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://radical-earth.lovable.app/collaborate" />
@@ -39,7 +39,7 @@ const Collaborate = () => {
               "Architectural Design",
               "Interior Design",
               "Rendering & Visualisation",
-              "Presentation Work",
+              "Procurement",
               "Concept Development",
               "Feasibility Studies",
             ].map((service) => (

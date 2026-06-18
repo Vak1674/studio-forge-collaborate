@@ -34,9 +34,6 @@ const Collaborate = () => {
       {/* Services */}
       <section className="px-6 md:px-8 pb-20 md:pb-32">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-tighter text-center mb-16">
-            Services
-          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Design Consulting",

@@ -25,9 +25,6 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
           alt="Radical Earth Studio"
           className="h-32 md:h-48 splash-fade"
         />
-        <span className="font-sans text-[10px] md:text-xs tracking-[0.4em] uppercase text-foreground/70 splash-line">
-          Radical Earth Studio
-        </span>
       </div>
 
       <style>{`
@@ -35,16 +32,11 @@ const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
           0% { opacity: 0; transform: scale(0.92); filter: blur(6px); }
           100% { opacity: 1; transform: scale(1); filter: blur(0); }
         }
-        @keyframes splashLine {
-          0% { opacity: 0; letter-spacing: 0.2em; }
-          100% { opacity: 1; letter-spacing: 0.4em; }
-        }
         @keyframes splashRise {
           0% { transform: translateY(8px); }
           100% { transform: translateY(0); }
         }
         .splash-fade { animation: splashFade 1.4s ease-out both; }
-        .splash-line { animation: splashLine 1.6s ease-out 0.6s both; }
         .splash-rise { animation: splashRise 1.4s ease-out both; }
       `}</style>
     </div>

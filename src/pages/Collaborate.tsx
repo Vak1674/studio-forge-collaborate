@@ -36,8 +36,8 @@ const Collaborate = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              "Design Consulting",
-              "Design Resolution",
+              "Architectural Design",
+              "Interior Design",
               "Rendering & Visualisation",
               "Presentation Work",
               "Concept Development",

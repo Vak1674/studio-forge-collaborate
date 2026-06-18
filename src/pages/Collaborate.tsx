@@ -55,40 +55,38 @@ const Collaborate = () => {
         </div>
       </section>
 
-      {/* Who We Work With */}
-      <section className="px-6 md:px-8 py-20 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-6">
-        <div className="md:col-span-5 md:col-start-2">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">Who We Work With</span>
-          <ul className="space-y-4 font-serif text-lg md:text-xl">
-            <li>— Private Clients</li>
-            <li>— Hospitality Visionaries</li>
-            <li>— Developers</li>
-            <li>— Fellow Creatives</li>
-          </ul>
+      {/* Services */}
+      <section className="px-6 md:px-8 py-20 md:py-32">
+        <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-16">Services</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            "Design Consulting",
+            "Design Resolution",
+            "Rendering & Visualisation",
+            "Presentation Work",
+            "Concept Development",
+            "Feasibility Studies",
+          ].map((service, i) => (
+            <div
+              key={service}
+              className="border border-border bg-secondary p-8 min-h-[180px] flex flex-col justify-between group hover:border-foreground transition-colors duration-300"
+            >
+              <span className="font-serif text-3xl text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-sans text-sm font-medium tracking-widest uppercase mt-6">
+                {service}
+              </h3>
+            </div>
+          ))}
         </div>
 
-        <div className="md:col-span-4 md:col-start-8">
-          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">What We Bring</span>
-          <div className="space-y-8">
-            <div>
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Consulting</h3>
-              <ul className="space-y-2 font-serif text-base md:text-lg text-muted-foreground">
-                <li>— Design Consulting</li>
-                <li>— Design Resolution</li>
-                <li>— Rendering & Visualisation</li>
-                <li>— Presentation Work</li>
-                <li>— Concept Development</li>
-                <li>— Feasibility Studies</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-sans text-sm font-medium tracking-widest uppercase mb-3">Principles</h3>
-              <ul className="space-y-2 font-serif text-base md:text-lg text-muted-foreground">
-                <li>— Fearless Exploration</li>
-                <li>— Practical Ambition</li>
-                <li>— Ecological Responsibility</li>
-              </ul>
-            </div>
+        <div className="mt-20 md:mt-32 max-w-4xl mx-auto text-center">
+          <span className="font-sans text-xs tracking-widest uppercase text-muted-foreground block mb-8">Principles</span>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 font-serif text-lg md:text-xl">
+            <span>Fearless Exploration</span>
+            <span>Practical Ambition</span>
+            <span>Ecological Responsibility</span>
           </div>
         </div>
       </section>

@@ -69,15 +69,12 @@ const Collaborate = () => {
               "Presentation Work",
               "Concept Development",
               "Feasibility Studies",
-            ].map((service, i) => (
+            ].map((service) => (
               <div
                 key={service}
-                className="border border-border bg-secondary p-8 min-h-[180px] flex flex-col justify-between"
+                className="border border-border bg-secondary p-8 min-h-[180px] flex flex-col justify-end"
               >
-                <span className="font-serif text-4xl md:text-5xl text-muted-foreground">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-serif text-lg md:text-xl tracking-tight mt-6">
+                <h3 className="font-serif text-lg md:text-xl tracking-tight">
                   {service}
                 </h3>
               </div>
